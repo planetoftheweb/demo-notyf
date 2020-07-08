@@ -51,8 +51,18 @@
         duration: 0,
         dismissible: true,
         position: { x: 'right', y: 'top' },
+        types: [
+          {
+            type: 'home',
+            background: '#d33682',
+          },
+        ],
       })
       notyf.success('Way to go Bud')
+      notyf.open({
+        type: 'home',
+        message: 'Welcome Home',
+      })
     </script>
   </body>
 </html>
