@@ -6,11 +6,6 @@
       integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/css.gg/icons/all.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
-    />
   </head>
   <body>
     <div class="container">
@@ -46,30 +41,5 @@
         dicta magnam? Libero, sequi deleniti!
       </p>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
-
-    <script>
-      let notyf = new Notyf({
-        duration: 0,
-        dismissible: true,
-        position: { x: 'right', y: 'top' },
-        types: [
-          {
-            type: 'home',
-            background: '#d33682',
-            icon: {
-              className: 'gg-home text-white d-inline-block',
-              tagName: 'i',
-            },
-          },
-        ],
-      })
-      notyf.success('Way to go Bud')
-      notyf.open({
-        type: 'home',
-        message: 'Welcome Home',
-      })
-    </script>
   </body>
 </html>
