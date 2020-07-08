@@ -46,11 +46,13 @@
       </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
-
     <script>
-      let notyf = new Notyf()
+      let notyf = new Notyf({
+        duration: 0,
+        dismissible: true,
+        position: { x: 'right', y: 'top' },
+      })
       notyf.success('Way to go Bud')
-      notyf.error('Oh...fudge')
     </script>
   </body>
 </html>
