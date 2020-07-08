@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/css.gg/icons/all.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Headline</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+        officiis, velit minus deserunt est suscipit. Consequuntur laboriosam
+        est, illum totam voluptates tempore commodi ut, molestiae nulla vel
+        dicta aperiam tenetur?
+      </p>
+      <p>
+        Dolores, error veniam quidem maxime asperiores ullam numquam nulla
+        iusto! Distinctio similique aliquam quae qui. Officiis illo animi ex
+        aliquam illum tenetur veritatis rerum facere dolores dolore? Expedita,
+        veniam sint?
+      </p>
+      <p>
+        Officiis, cumque animi? Delectus, nemo! Necessitatibus illo consequuntur
+        ut obcaecati sint optio nisi repellendus et quasi, asperiores veritatis
+        quae eveniet alias molestiae odio non exercitationem, consequatur ea
+        quas aspernatur architecto.
+      </p>
+      <p>
+        Saepe voluptatem libero numquam magni, optio sint similique asperiores
+        odio culpa eaque eligendi aliquid, nesciunt obcaecati earum? Quis totam,
+        natus suscipit et voluptas ab accusamus atque consectetur deleniti fugit
+        modi!
+      </p>
+      <p>
+        Ullam illo consequatur, ratione quasi recusandae aperiam vitae aliquam
+        expedita, asperiores, velit minus tempore quos similique laboriosam
+        impedit? Consequatur repudiandae, eveniet nostrum explicabo quos quam
+        dicta magnam? Libero, sequi deleniti!
+      </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
+    <script>
+      let notyf = new Notyf({
+        duration: 0,
+        dismissible: true,
+        position: { x: 'right', y: 'top' },
+        types: [
+          {
+            type: 'home',
+            background: '#d33682',
+            icon: {
+              className: 'gg-home text-white d-inline-block',
+              tagName: 'i',
+            },
+          },
+        ],
+      })
+      notyf.success('Way to go Bud')
+      notyf.open({
+        type: 'home',
+        message: 'Welcome Home',
+      })
+    </script>
+  </body>
+</html>
